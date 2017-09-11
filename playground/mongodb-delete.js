@@ -12,9 +12,19 @@ console.log(' connected to MongoDB server');
 
 //deleteMany
 
-db.collection('Todos').deleteMany({text:'eat lunch'}).then((obj)=>{
-    console.log(obj);
-},()=>{});
+// db.collection('Todos').deleteMany({text:'eat lunch'}).then((obj)=>{
+//     console.log(obj);
+// });
+
+//deletOne
+// db.collection('Todos').deletOne({text:'eat lunch'}).then((result)=>{
+//        console.log(result);
+//      });
+
+//findOneAndDelete  it also shows the document that is deleted
+// db.collection('Todos').findoneAndDelete({completed:true}).then((result)=>{
+// console.log(result); 
+// });
 
 //db.close();
 });
